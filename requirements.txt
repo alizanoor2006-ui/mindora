@@ -1,0 +1,8 @@
+Flask
+flask-cors
+mysql-connector-python
+textblob
+nltk
+waitress
+python-dotenv
+groq

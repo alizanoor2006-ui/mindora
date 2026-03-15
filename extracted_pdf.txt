@@ -1,0 +1,365 @@
+A Project Report 
+On 
+ 
+Mumma Meals Management Systems 
+ 
+Submitted To 
+SA VITRIBAI PHULE PUNE UNIVERSITY 
+For Fulfilment 
+Of 
+TY BSc (Computer Science), Semester VI 
+ASHOKA CENTER FOR BUSINESS & 
+COMPUTER STUDIES, NASHIK 
+ 
+Guided by: Asst.prof. Sadhana Kahandal 
+ 
+Submitted by: 
+Atharva Shinde 
+Devesh Mahajan 
+Karan Shewale 
+ 
+ 
+2 | P a g e  
+ 
+ACKNOWLEDGEMENT 
+ 
+We would like to express our sincere gratitude to Dr. P.A. Ghosh, Principal of 
+Ashoka Center for Business and Computer Studies, for his unwavering support 
+and encouragement throughout the duration of this project. His visionary 
+leadership has provided us with the necessary resources and guidance to pursue 
+our academic endeavours. We extend our heartfelt thanks to Dr. Harsha Patil, Vice 
+Principal, for her valuable insights and assistance in coordinating various aspects 
+of this project. Her dedication to fostering academic excellence has been 
+instrumental in shaping our journey. Our gratitude also goes to Mrs. Sonali Ingle, 
+Head of the Department of Computer Science, for her expert guidance and 
+mentorship. Her expertise and commitment to our academic growth have been 
+invaluable in shaping the direction of this project. We would also like to thank 
+our Project Guide, Asst.prof. Sadhana kahandal, for their invaluable support and 
+guidance at every step of this project. Their expertise, patience, and 
+encouragement have been instrumental in helping us navigate through challenges 
+and achieve our goals. Finally, we extend our thanks to all faculty members and 
+staff who have contributed to this project directly or indirectly. Their support and 
+encouragement have been crucial in making this project a success.  
+Thank you all for your unwavering support and belief in our abilities 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 | P a g e  
+ 
+INDEX 
+ 
+Sr. No. Content Page No. 
+1. Abstract 4 
+ 
+ 
+ 
+2. 
+Introduction 
+  ○ Motivation 
+  ○ Problem Statement 
+  ○ Objective 
+  ○ Literature Survey 
+  ○ Project Scope And Limits 
+ 
+ 
+ 
+5 
+ 
+ 
+3. 
+System Analysis 
+  ○ Existing System 
+  ○ Scope And Limits of Existing System 
+  ○ Project Features 
+  ○ Requirement Analysis 
+ 
+ 
+9 
+ 
+ 
+4. 
+System Design 
+  ○ Data Model 
+  ○ System Model: Using OOSE 
+  ○ User Interface 
+ 
+ 
+12 
+ 
+5. 
+Implementation Details 
+  ○ Software / Hardware Specifications 
+ 
+39 
+ 
+ 
+6. 
+Outputs And Reports Testing 
+  ○ Test Plan 
+  ○ Black Box Testing Test Cases 
+  ○ White Box Testing Test Cases 
+  ○ Results 
+ 
+ 
+41 
+7. Conclusion 47 
+8. Future Scope 48 
+9. Bibliography And References 49 
+ 
+ 
+4 | P a g e  
+ 
+PROJECT ABSTRACT 
+ 
+The Mumma Meals Management System is a comprehensive web-based platform designed to 
+promote and educate consumers about dehydrated food products. This system serves as an 
+online product catalogue and recipe hub, offering detailed product information, nutritional 
+benefits, and diverse culinary applications. It features a user-friendly interface with category-
+wise product listings, interactive recipes, and a secure review system accessible only to verified 
+buyers. The administrative backend provides efficient product management, inventory control, 
+order placement, digital invoicing, and sales analysis. Developed using HTML, CSS, 
+JavaScript, PHP , MySQL, and Python, Mumma Meals aims to address the growing demand for 
+sustainable and nutritious food options while laying the groundwork for future e-commerce 
+integration. 
+  
+5 | P a g e  
+ 
+INTRODUCTION 
+ 
+ Motivation 
+In an era of rapid urbanization and evolving dietary habits, dehydrated foods 
+have gained popularity due to their extended shelf life, compact storage, and 
+nutritional benefits. However, many consumers lack knowledge about their 
+diverse applications. Mumma Meals aims to bridge this gap by creating a 
+comprehensive digital platform that showcases these products alongside 
+curated recipes, promoting awareness and engagement. 
+ 
+ Problem Statement 
+Consumers often struggle to find detailed information on dehydrated food 
+products, their nutritional benefits, and their culinary applications. Existing 
+platforms lack a seamless, engaging user experience that integrates product 
+information and recipes. Businesses need a structured product management 
+system with features for inventory tracking, order processing, and customer 
+engagement. 
+ 
+ Objective 
+The project aims to provide an extensive catalog of dehydrated food products, 
+complete with detailed descriptions and health benefits, to educate and inform 
+users about their nutritional value. Additionally, it will feature a diverse recipe 
+repository that showcases the versatility of these products, encouraging users 
+to explore creative and delicious ways to incorporate them into their meals. A 
+key focus is promoting health-conscious and sustainable eating habits by 
+highlighting the long shelf life, reduced waste, and nutrient retention of 
+dehydrated foods. The platform will be designed with a visually appealing and 
+intuitive user interface to enhance user experience and engagement. 
+Furthermore, the system will be structured to accommodate future e-
+commerce functionality, allowing seamless integration of online purchasing 
+options as the project evolves. 
+ 
+ 
+ 
+6 | P a g e  
+ 
+ Literature Survey 
+ 
+- Dehydrated Food Market Trends: Studies show increasing demand due to 
+convenience, nutrition, and reduced food wastage.  
+-  E-commerce and Food Accessibility: Research highlights user-centric 
+design’s role in engagement and sales growth.  
+- Digital Recipe Repositories: Successful platforms use personalized 
+recommendations and diverse content to attract users.  
+- Consumer Behaviour in Sustainable Eating: Studies indicate that 
+educating consumers about food sustainability enhances adoption rates.  
+- E-commerce Research: User-friendly UI/UX is critical for increasing 
+customer engagement and sales.  
+- Recipe Platforms: Platforms with personalized recommendations have 
+higher user retention. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7 | P a g e  
+ 
+ Project Scope and Limits 
+ 
+Scope: 
+ 
+1. Centralized Product Management 
+Organizes products into categories with detailed descriptions, images, 
+ingredients, and recipes. Provides a search and filter option for easy 
+navigation. 
+2. Enhanced Customer Engagement 
+Offers detailed product information to educate users about product 
+usage. Includes a review and rating system to gather customer feedback. 
+Allows admins to maintain a loyal customer base by providing 
+personalized service. 
+3. Admin-Controlled Order Processing 
+Admins place orders on behalf of customers and generate invoices. 
+Customers receive invoices via email, ensuring proper record-keeping. 
+4. Efficient Inventory & Sales Tracking 
+Inventory is monitored manually to prevent stock outs. Generates 
+automated sales reports (daily, weekly, monthly, annual) for business 
+analysis. 
+5. Brand Building & Information Management 
+Provides an ‘About Us’ and ‘Contact’ section to improve business 
+credibility. Offers product-based YouTube video tutorials to promote the 
+brand. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8 | P a g e  
+ 
+Limitations: 
+ 
+1. No Direct Customer Ordering 
+Unlike e-commerce platforms, customers cannot place orders directly. 
+Instead, the admin manually processes orders. 
+2. Limited Payment Integration 
+The system currently does not support online payment gateways like 
+UPI, credit cards, or PayPal, requiring external payment processing. 
+3. No Multi-Vendor Support 
+The platform is designed only for a single dried food company, not a 
+marketplace with multiple sellers. 
+4. No Mobile App Integration 
+The system is a web-based platform with no dedicated mobile 
+application, which might limit accessibility for mobile users. 
+5. Limited Role-Based Access Control 
+All admins have full control, meaning there are no sub-admin roles like 
+product managers or sales executives. 
+ 
+ 
+  
+9 | P a g e  
+ 
+SYSTEM ANALYSIS 
+ 
+EXISTING SYSTEMS 
+Dried food businesses primarily rely on manual order processing, using calls, 
+WhatsApp, or emails, leading to mismanagement. Invoices and inventory are 
+tracked via Excel or physical records, causing stock errors. Customer 
+engagement is limited, with no proper access to product details, recipes, or 
+reviews. Sales tracking is manual, making reporting tedious. Additionally, the 
+absence of a centralized online presence restricts product visibility and 
+marketing relies solely on social media. 
+SCOPE AND LIMITATIONS OF EXISTING SYSTEMS 
+ 
+Scope: 
+ 
+1. Manual systems provide flexibility but at the cost of efficiency. 
+2. Traditional sales tracking allows customized pricing, but it's prone to 
+errors. 
+3. Small businesses avoid technical complexity, but they lack automation. 
+ 
+Limitations: 
+1. Time-Consuming – Manual order processing and inventory tracking are 
+slow. 
+2. Human Errors – Risk of incorrect stock updates and mismanagement. 
+3. Lack of Customer Interaction – No review or feedback system for 
+improvement. 
+4. No Data Insights – Businesses lack automated reports for growth 
+analysis. 
+5. Limited Scalability – Cannot handle large order volumes efficiently. 
+ 
+ 
+ 
+ 
+ 
+ 
+10 | P a g e  
+ 
+Requirement Analysis  
+ 
+1.  Admin Panel: 
+ Add, update, and manage products, categories, and stock levels. 
+ Place orders for customers and generate invoices. 
+ View and analyze sales reports. 
+2.  User Panel: 
+ Browse categories, products, and recipes. 
+ View detailed product descriptions, ingredients, and preparation methods. 
+ Read and write product reviews. 
+3.  Security Features: 
+ User authentication (registration, login, password reset). 
+ Data validation for secure transactions. 
+4. Automated Sales Reports: 
+ Generate daily, weekly, monthly, and yearly sales reports. 
+ View graphical sales insights. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11 | P a g e  
+ 
+System Features  
+ 
+1. Admin Features: 
+Product & Category Management – Add, edit, and remove 
+products/categories. 
+Order Processing – Admin places orders on behalf of customers. 
+Inventory Management – Stock updates for each product. 
+Invoice Generation & Emailing – Digital invoices sent to users. 
+Sales Reports & Analytics – Insights into business performance. 
+2. User Features: 
+Product Browsing – View categories, products, and recipes. 
+Recipe & Ingredients Section – Learn how to use the products. 
+Search & Filter – Find products easily by category or keywords. 
+Customer Reviews & Ratings – Users can leave feedback. 
+3. Security Features: 
+Secure Login & Authentication – Ensures user and admin data protection. 
+Forgot Password & Reset Mechanism – Allows users to recover their 
+accounts. 
+Validation & CSRF Protection – Prevents malicious activities. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12 | P a g e  
+DATABASE DESIGN   Admin Table              Categories           
+
+13 | P a g e  
+ Inventory             Orders             
+
+14 | P a g e  
+ Order items              Reviews            
+
+15 | P a g e  
+ Products                         
+

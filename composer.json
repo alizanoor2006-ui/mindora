@@ -1,0 +1,7 @@
+{
+    "name": "mindora/project",
+    "description": "Mindora Student Wellness Platform",
+    "require": {
+        "php": ">=8.0"
+    }
+}
