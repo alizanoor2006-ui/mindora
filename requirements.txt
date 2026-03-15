@@ -6,3 +6,4 @@ nltk
 waitress
 python-dotenv
 groq
+gunicorn
